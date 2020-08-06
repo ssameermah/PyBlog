@@ -1,0 +1,25 @@
+{% extends "pyblog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div style="background-color:#000000" class="content-section">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend  class="border-bottom mb-4">Log In!</legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div  class="form-group">
+
+                <button class="btn btn-warning" type="submit">Login</button>
+                <small class="text-muted ml-2">
+                    <a style="color:#ffc107"  href="{% url 'password_reset' %}">Forgot Password?</a>
+                </small>
+            </div>
+        </form>
+        <div  class="border-top pt-3">
+            <small class="text-muted">
+                Need an an account? <a style="color:#ffc107"  class="ml-2" href="{% url 'register' %}">Sign Up now</a>
+            </small>
+        </div>
+    </div>
+{% endblock content %}
