@@ -13,16 +13,16 @@
     <link rel="stylesheet" type="text/css" href="{% static 'pyblog/main.css' %}">
 
     {% if title %}
-        <title>Pyblog - {{ title }} </title>
+        <title>HMI Mini Project - {{ title }} </title>
     {% else %}
-        <title>Pyblog</title>
+        <title>HMI Mini Project</title>
     {% endif %}
 </head>
 <body>
         <header class="site-header">
         <nav class="navbar navbar-expand-md navbar-dark bg-warning fixed-top">
         <div class="container">
-        <a style="color:#000000" class="navbar-brand mr-4" href="{% url 'blog-home' %}">PyBlog</a>
+        <a style="color:#000000" class="navbar-brand mr-4" href="{% url 'blog-home' %}">HMI Mini Project</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -58,19 +58,6 @@
                 {% endfor %}
             {% endif %}
             {% block content %}{% endblock %}
-        </div>
-        <div style="background-color:#000000" class="col-md-4">
-        <div style="background-color:#000000" class="content-section">
-            <h3 style="color:#ffc107">Our Sidebar</h3>
-            <p class='text-muted'>You can put any information here you'd like.
-            <ul class="list-group ">
-                <li style="background-color:#000000" class="list-group-item list-group-item-light">Latest Posts</li>
-                <li style="background-color:#000000" class="list-group-item list-group-item-light">Announcements</li>
-                <li style="background-color:#000000" class="list-group-item list-group-item-light">Calendars</li>
-                <li style="background-color:#000000" class="list-group-item list-group-item-light">etc</li>
-            </ul>
-            </p>
-        </div>
         </div>
     </div>
     </main>

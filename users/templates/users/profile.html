@@ -3,7 +3,7 @@
 {% block content %}
     <div style="background-color:#000000" class="content-section">
         <div style="background-color:#000000" class="media">
-            <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
+            {% comment %} <img class="rounded-circle account-img" src="{{ user.profile.image.url }}"> {% endcomment %}
             <div class="media-body">
                 <h2 style="color:#ffc107" class="account-heading">{{ user.username }}</h2>
                 <p class="text-secondary">{{ user.email }}</p>

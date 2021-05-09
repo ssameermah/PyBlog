@@ -2,7 +2,7 @@
 {% block content %}
           <!-- used to write python similar code (logic ) in html-->
  <article style="background-color:#000000" class="media content-section">
-    <img class ="rounded-circle article-img" src = "{{ object.author.profile.image.url }}">
+    {% comment %} <img class ="rounded-circle article-img" src = "{{ object.author.profile.image.url }}"> {% endcomment %}
     <div style="background-color:#000000" class="media-body">
         <div class="article-metadata">
             <a style="color:#ffffff" class="mr-2" href="{% url 'user-posts' object.author.username %}">{{ object.author }}</a>

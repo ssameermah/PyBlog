@@ -1,0 +1,29 @@
+# Ignore Pycache Folder
+/__pycache__
+
+
+# Ignore .pyc
+*.pyc
+
+#Ignore Media Folder
+**/media/
+!/media/init.py
+# Ignore IDE specific folder
+/.idea
+/.vscode
+
+
+#ignore DB
+**/db.sqlite3
+
+
+# Ignore Secret Key
+/sk.txt
+
+# Ignore Video Folder
+video/
+
+# Ignore Virtual Environment
+env/
+
+#ignore nodu_modules
